@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+ruamel.yaml
+openai
+jinja2
+loguru
+typer
+sqlalchemy

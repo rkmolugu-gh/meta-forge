@@ -1,0 +1,35 @@
+project: bicycle-plm
+entities:
+  - name: Person
+    table: person
+    relationships:
+      passport:
+        type: one-to-one
+        entity: Passport
+
+  - name: Passport
+    table: passport
+
+  - name: Customer
+    table: customer
+    relationships:
+      orders:
+        type: one-to-many
+        entity: Order
+
+  - name: Order
+    table: orders
+    relationships:
+      customer:
+        type: many-to-one
+        entity: Customer
+
+  - name: Product
+    table: product
+    relationships:
+      suppliers:
+        type: many-to-many
+        entity: Supplier
+
+  - name: Supplier
+    table: supplier

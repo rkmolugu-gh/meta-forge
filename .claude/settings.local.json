@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(sqlite3 *)",
+      "Bash(curl -s http://127.0.0.1:8001/Person/)",
+      "Bash(curl -s http://127.0.0.1:8001/Person/3)",
+      "Bash(curl -s http://127.0.0.1:8001/Person/999)",
+      "Bash(curl -s http://127.0.0.1:8001/openapi.json)",
+      "Bash(kill %1)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}, Content-Type: %{content_type}\" http://127.0.0.1:8002/docs)",
+      "Bash(curl -s http://127.0.0.1:8002/openapi/generated.json)",
+      "Bash(curl -s http://127.0.0.1:8002/openapi.json)"
+    ]
+  }
+}
